@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E28931C226AEBE200844139 /* exercise-37.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0E28931B226AEBE200844139 /* exercise-37.cpp */; };
 		0EEF001A226AD16D0090EA4F /* exercise-02.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0EEF0019226AD16D0090EA4F /* exercise-02.cpp */; };
 		0EEF0022226AD35A0090EA4F /* exercise-12.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0EEF0020226AD35A0090EA4F /* exercise-12.cpp */; };
 		0EEF0024226AD3E50090EA4F /* exercise_14.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0EEF0023226AD3E50090EA4F /* exercise_14.cpp */; };
@@ -28,6 +29,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0E28931B226AEBE200844139 /* exercise-37.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "exercise-37.cpp"; sourceTree = "<group>"; };
 		0EEF0016226AD16D0090EA4F /* Chapter-03 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Chapter-03"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EEF0019226AD16D0090EA4F /* exercise-02.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "exercise-02.cpp"; sourceTree = "<group>"; };
 		0EEF0020226AD35A0090EA4F /* exercise-12.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "exercise-12.cpp"; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				0EEF0025226AD55F0090EA4F /* exercise-16.cpp */,
 				0EEF0027226ADAAF0090EA4F /* exercise-textbook.cpp */,
 				0EEF0029226AE6800090EA4F /* exercise-36.cpp */,
+				0E28931B226AEBE200844139 /* exercise-37.cpp */,
 			);
 			path = "Chapter-03";
 			sourceTree = "<group>";
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E28931C226AEBE200844139 /* exercise-37.cpp in Sources */,
 				0EEF0026226AD55F0090EA4F /* exercise-16.cpp in Sources */,
 				0EEF0024226AD3E50090EA4F /* exercise_14.cpp in Sources */,
 				0EEF002A226AE6800090EA4F /* exercise-36.cpp in Sources */,
