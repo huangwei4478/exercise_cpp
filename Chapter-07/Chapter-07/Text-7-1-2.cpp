@@ -15,6 +15,11 @@ using namespace std;
 struct Sales_data {
     
     Sales_data() = default;
+    
+    friend Sales_data add(const Sales_data&, const Sales_data&);
+    friend ostream &print(ostream&, const Sales_data&);
+    friend istream &read(istream&, Sales_data&);
+    
     Sales_data(const string &s): bookNo(s) { }
     Sales_data(const string &s, unsigned n, double p):
     bookNo(s), units_sold(n), revenue(p * n) { }
@@ -26,12 +31,6 @@ struct Sales_data {
     unsigned units_sold = 0;
     unsigned revenue = 0.0;
 };
-
-
-
-Sales_data add(const Sales_data&, const Sales_data&);
-ostream &print(ostream&, const Sales_data&);
-istream &read(istream&, Sales_data&);
 
 double Sales_data::avg_price() const {
     if (units_sold) {
