@@ -11,6 +11,8 @@
 		0E5892FE2287FF24000DFD80 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0E5892FD2287FF24000DFD80 /* main.cpp */; };
 		0E58930622880304000DFD80 /* Exercise-7-1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0E58930422880304000DFD80 /* Exercise-7-1.cpp */; };
 		0E58930822880462000DFD80 /* Text-7-1-2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0E58930722880462000DFD80 /* Text-7-1-2.cpp */; };
+		0E74DB95229A540E00F85F08 /* Exercise-7-5.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0E74DB94229A540E00F85F08 /* Exercise-7-5.cpp */; };
+		0E74DB97229A55E000F85F08 /* Exercise-7-38.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0E74DB96229A55E000F85F08 /* Exercise-7-38.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +33,8 @@
 		0E5892FD2287FF24000DFD80 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		0E58930422880304000DFD80 /* Exercise-7-1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Exercise-7-1.cpp"; sourceTree = "<group>"; };
 		0E58930722880462000DFD80 /* Text-7-1-2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Text-7-1-2.cpp"; sourceTree = "<group>"; };
+		0E74DB94229A540E00F85F08 /* Exercise-7-5.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Exercise-7-5.cpp"; sourceTree = "<group>"; };
+		0E74DB96229A55E000F85F08 /* Exercise-7-38.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Exercise-7-38.cpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,8 @@
 				0E58930422880304000DFD80 /* Exercise-7-1.cpp */,
 				0E58930722880462000DFD80 /* Text-7-1-2.cpp */,
 				0E28D8AB2290329700E83F1E /* Screen.cpp */,
+				0E74DB94229A540E00F85F08 /* Exercise-7-5.cpp */,
+				0E74DB96229A55E000F85F08 /* Exercise-7-38.cpp */,
 			);
 			path = "Chapter-07";
 			sourceTree = "<group>";
@@ -128,6 +134,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E5892FE2287FF24000DFD80 /* main.cpp in Sources */,
+				0E74DB95229A540E00F85F08 /* Exercise-7-5.cpp in Sources */,
+				0E74DB97229A55E000F85F08 /* Exercise-7-38.cpp in Sources */,
 				0E58930622880304000DFD80 /* Exercise-7-1.cpp in Sources */,
 				0E58930822880462000DFD80 /* Text-7-1-2.cpp in Sources */,
 				0E28D8AC2290329700E83F1E /* Screen.cpp in Sources */,
