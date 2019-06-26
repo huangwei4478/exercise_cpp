@@ -18,9 +18,6 @@
 
 using namespace std;
 
-void printInt(int& i) { cout << "lvalue reference: " << i << endl; }
-void printInt(int&& i) { cout << "rvalue reference: " << i << endl; }
-
 class boVector {
     int size;
     double* arr_;           // big array
@@ -41,40 +38,74 @@ class boVector {
     ~boVector() { delete [] arr_; }
 };
 
-void foo(boVector v);
-void foo_by_ref(boVector& v);
+void foo( boVector arg );
+// boVector has both move constructor and copy constructor
 
-boVector createBoVector();          // Creates a boVector
+boVector createBoVector();
 
-
-
-int main(int argc, const char * argv[]) {
-    boVector reusable = createBoVector();
-    
-    foo(reusable);                  // invoke expensive copy constructor inside
-    
-    foo(createBoVector());          // invoke costly copy constructor inside, and the temp value is destoryed
-    
-    
-    foo_by_ref(reusable);
-    foo(std::move(reusable));       // reusable.arr_ == nullptr
-                                    // reusable is destoryed here
-    foo(reusable);
+template< typename T >
+void relay( T arg ) {
+    foo(arg);
 }
 
-
-class X {};
-
-/**
- Note 1: the most useful place for rvalue reference is overloading
-         copy constructor and copy assignment operator to achieve
-         move semantics.
- */
-
-X& X::operator=(const X & rhs) noexcept;
-X& X::operator=(X && rhs) noexcept;
-
+int main() {
+    boVector reusable = createBoVector();
+    relay(reusable);
+    
+    relay(createBoVector());
+}
 
 /**
- Node 2: Move semantics is implemented for all STL containers
+ 1. No costly and unnecessary copy construction of boVector is made;
+ 2. rvalue is forwarded as rvalue, and lvalue is forwarded as lvalue;
  */
+
+// Solution
+
+template< typename  T >
+void relay( T&& arg ) {
+    foo( std::forward<T>( arg ) );
+}
+
+/**
+ Reference Collapsing Rule ( C++ 11 ):
+ 1. T& &   --> T&
+ 2. T& &&  --> T&
+ 3. T&& &  --> T&
+ 4. T&& && --> T&&
+
+ */
+
+//template < class T >
+//struct remove_reference;                            // It removes reference on type T
+//
+//// T is int&
+//remove_reference<int&>::type i;                     // int i;
+//
+//// T is int
+//remove_reference<int>::type i;                      // int i;
+
+/**
+    relay(9) => T = int&& => T&& = int && && = int &&
+ 
+    relay(x) => T = int& => T&& = int& && = int&
+ */
+
+/**
+ T&& is Universal Reference: rvalue, lvalue, const, non-const, etc...
+ Conditions:
+ 1. T is a template type
+ 2. Type deduction (reference collapsing) happens to T
+    - T is a function template type, not class template type
+ 
+ */
+
+// Implementation  of std::forward()
+template<class T>
+T&& forward(typename remove_reference<T>::type& arg) {
+    return static_cast<T&&>(arg);
+}
+
+// std::move() vs std::forward()
+// std::move<T>(arg);                      // turn arg into an rvalue type
+// std::forward<T>(arg);                   // turn arg to type of T&&
