@@ -42,8 +42,10 @@ class boVector {
 };
 
 void foo(boVector v);
+void foo_by_ref(boVector& v);
 
 boVector createBoVector();          // Creates a boVector
+
 
 
 int main(int argc, const char * argv[]) {
@@ -54,4 +56,25 @@ int main(int argc, const char * argv[]) {
     foo(createBoVector());          // invoke costly copy constructor inside, and the temp value is destoryed
     
     
+    foo_by_ref(reusable);
+    foo(std::move(reusable));       // reusable.arr_ == nullptr
+                                    // reusable is destoryed here
+    foo(reusable);
 }
+
+
+class X {};
+
+/**
+ Note 1: the most useful place for rvalue reference is overloading
+         copy constructor and copy assignment operator to achieve
+         move semantics.
+ */
+
+X& X::operator=(const X & rhs) noexcept;
+X& X::operator=(X && rhs) noexcept;
+
+
+/**
+ Node 2: Move semantics is implemented for all STL containers
+ */
