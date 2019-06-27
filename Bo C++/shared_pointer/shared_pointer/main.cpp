@@ -31,14 +31,19 @@ public:
 //}
 
 void foo() {
-    shared_ptr<Dog> p(new Dog("Gunner"));           // reference count == 1
-    p -> bark();
+    shared_ptr<Dog> p1 = make_shared<Dog>("Gunner");        // using default deleter: operator delete
     
-    {
-        shared_ptr<Dog> p2 = p;     // reference count == 2
-    }   // reference count == 1
+    // custom deleter
+    shared_ptr<Dog> p2 = shared_ptr<Dog>(new Dog("Tank"),
+                                         [](Dog* p) { cout << "Custom deleting. "; delete p; });
     
-}       // reference count == 0, Dog will be destroyed
+    shared_ptr<Dog> p3(new Dog[3]);             // dog[1] and dog[2] have memory leaks
+    shared_ptr<Dog> p4(new Dog[4], [](Dog* p) { delete[] p; }); // all 3 dogs will be deleted when p4 goes out of scope
+    
+//    Dog* d = p1.get();               // returns the raw pointer
+    
+    
+}
 
 int main(int argc, const char * argv[]) {
     foo();
