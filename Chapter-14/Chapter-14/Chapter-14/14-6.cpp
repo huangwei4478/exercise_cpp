@@ -32,7 +32,8 @@ class Sales_data {
 public:
   Sales_data() : Sales_data("", 0, 0.0) {}
   explicit Sales_data(const std::string &no):
-  
+  Sales_data(const std::string &no, unsigned us, double price) : bookNo(no), units_sold(us), revenue(price *us) {}
+  explicit Sales_data(std::istream &is) : Sales_data() { read(is, *this); }
 private:
   double avg_price() const;
   std::string bookNo;
