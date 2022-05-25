@@ -10,6 +10,8 @@
 		0E8B8CA2282B99CA0048C9C4 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0E8B8CA1282B99CA0048C9C4 /* main.cpp */; };
 		0E8B8CAA282BA0420048C9C4 /* Complex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0E8B8CA8282BA0420048C9C4 /* Complex.cpp */; };
 		0EBCBCC4283E251800B2CE18 /* Queue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0EBCBCC2283E251800B2CE18 /* Queue.cpp */; };
+		0EBCBCC7283E374700B2CE18 /* Subject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0EBCBCC5283E374700B2CE18 /* Subject.cpp */; };
+		0EBCBCCA283E376000B2CE18 /* Observer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0EBCBCC8283E376000B2CE18 /* Observer.cpp */; };
 		0ED2047D283B7DFC0098C7A8 /* String2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0ED2047B283B7DFC0098C7A8 /* String2.cpp */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +34,10 @@
 		0E8B8CA9282BA0420048C9C4 /* Complex.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Complex.hpp; sourceTree = "<group>"; };
 		0EBCBCC2283E251800B2CE18 /* Queue.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Queue.cpp; sourceTree = "<group>"; };
 		0EBCBCC3283E251800B2CE18 /* Queue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Queue.hpp; sourceTree = "<group>"; };
+		0EBCBCC5283E374700B2CE18 /* Subject.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Subject.cpp; sourceTree = "<group>"; };
+		0EBCBCC6283E374700B2CE18 /* Subject.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Subject.hpp; sourceTree = "<group>"; };
+		0EBCBCC8283E376000B2CE18 /* Observer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Observer.cpp; sourceTree = "<group>"; };
+		0EBCBCC9283E376000B2CE18 /* Observer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Observer.hpp; sourceTree = "<group>"; };
 		0ED2047B283B7DFC0098C7A8 /* String2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = String2.cpp; sourceTree = "<group>"; };
 		0ED2047C283B7DFC0098C7A8 /* String2.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = String2.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -66,6 +72,10 @@
 		0E8B8CA0282B99CA0048C9C4 /* houjie-cpp-intro */ = {
 			isa = PBXGroup;
 			children = (
+				0EBCBCC5283E374700B2CE18 /* Subject.cpp */,
+				0EBCBCC6283E374700B2CE18 /* Subject.hpp */,
+				0EBCBCC8283E376000B2CE18 /* Observer.cpp */,
+				0EBCBCC9283E376000B2CE18 /* Observer.hpp */,
 				0E8B8CA1282B99CA0048C9C4 /* main.cpp */,
 				0E8B8CA8282BA0420048C9C4 /* Complex.cpp */,
 				0E8B8CA9282BA0420048C9C4 /* Complex.hpp */,
@@ -134,6 +144,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EBCBCC7283E374700B2CE18 /* Subject.cpp in Sources */,
+				0EBCBCCA283E376000B2CE18 /* Observer.cpp in Sources */,
 				0E8B8CAA282BA0420048C9C4 /* Complex.cpp in Sources */,
 				0E8B8CA2282B99CA0048C9C4 /* main.cpp in Sources */,
 				0ED2047D283B7DFC0098C7A8 /* String2.cpp in Sources */,
