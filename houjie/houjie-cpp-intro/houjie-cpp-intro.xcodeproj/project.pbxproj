@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0E8B8CA2282B99CA0048C9C4 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0E8B8CA1282B99CA0048C9C4 /* main.cpp */; };
 		0E8B8CAA282BA0420048C9C4 /* Complex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0E8B8CA8282BA0420048C9C4 /* Complex.cpp */; };
+		0ED2047D283B7DFC0098C7A8 /* String2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0ED2047B283B7DFC0098C7A8 /* String2.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		0E8B8CA1282B99CA0048C9C4 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		0E8B8CA8282BA0420048C9C4 /* Complex.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Complex.cpp; sourceTree = "<group>"; };
 		0E8B8CA9282BA0420048C9C4 /* Complex.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Complex.hpp; sourceTree = "<group>"; };
+		0ED2047B283B7DFC0098C7A8 /* String2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = String2.cpp; sourceTree = "<group>"; };
+		0ED2047C283B7DFC0098C7A8 /* String2.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = String2.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,8 @@
 				0E8B8CA1282B99CA0048C9C4 /* main.cpp */,
 				0E8B8CA8282BA0420048C9C4 /* Complex.cpp */,
 				0E8B8CA9282BA0420048C9C4 /* Complex.hpp */,
+				0ED2047B283B7DFC0098C7A8 /* String2.cpp */,
+				0ED2047C283B7DFC0098C7A8 /* String2.hpp */,
 			);
 			path = "houjie-cpp-intro";
 			sourceTree = "<group>";
@@ -126,6 +131,7 @@
 			files = (
 				0E8B8CAA282BA0420048C9C4 /* Complex.cpp in Sources */,
 				0E8B8CA2282B99CA0048C9C4 /* main.cpp in Sources */,
+				0ED2047D283B7DFC0098C7A8 /* String2.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
