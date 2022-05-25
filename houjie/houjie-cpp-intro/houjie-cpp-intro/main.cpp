@@ -8,6 +8,7 @@
 #include <iostream>
 #include "Complex.hpp"
 #include "String2.hpp"
+#include "Queue.hpp"
 
 int main(int argc, const char * argv[]) {
     complex c1(2, 3);

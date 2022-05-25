@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0E8B8CA2282B99CA0048C9C4 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0E8B8CA1282B99CA0048C9C4 /* main.cpp */; };
 		0E8B8CAA282BA0420048C9C4 /* Complex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0E8B8CA8282BA0420048C9C4 /* Complex.cpp */; };
+		0EBCBCC4283E251800B2CE18 /* Queue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0EBCBCC2283E251800B2CE18 /* Queue.cpp */; };
 		0ED2047D283B7DFC0098C7A8 /* String2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0ED2047B283B7DFC0098C7A8 /* String2.cpp */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,8 @@
 		0E8B8CA1282B99CA0048C9C4 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		0E8B8CA8282BA0420048C9C4 /* Complex.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Complex.cpp; sourceTree = "<group>"; };
 		0E8B8CA9282BA0420048C9C4 /* Complex.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Complex.hpp; sourceTree = "<group>"; };
+		0EBCBCC2283E251800B2CE18 /* Queue.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Queue.cpp; sourceTree = "<group>"; };
+		0EBCBCC3283E251800B2CE18 /* Queue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Queue.hpp; sourceTree = "<group>"; };
 		0ED2047B283B7DFC0098C7A8 /* String2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = String2.cpp; sourceTree = "<group>"; };
 		0ED2047C283B7DFC0098C7A8 /* String2.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = String2.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -68,6 +71,8 @@
 				0E8B8CA9282BA0420048C9C4 /* Complex.hpp */,
 				0ED2047B283B7DFC0098C7A8 /* String2.cpp */,
 				0ED2047C283B7DFC0098C7A8 /* String2.hpp */,
+				0EBCBCC2283E251800B2CE18 /* Queue.cpp */,
+				0EBCBCC3283E251800B2CE18 /* Queue.hpp */,
 			);
 			path = "houjie-cpp-intro";
 			sourceTree = "<group>";
@@ -132,6 +137,7 @@
 				0E8B8CAA282BA0420048C9C4 /* Complex.cpp in Sources */,
 				0E8B8CA2282B99CA0048C9C4 /* main.cpp in Sources */,
 				0ED2047D283B7DFC0098C7A8 /* String2.cpp in Sources */,
+				0EBCBCC4283E251800B2CE18 /* Queue.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
