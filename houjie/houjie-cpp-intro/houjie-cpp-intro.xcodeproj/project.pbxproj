@@ -15,6 +15,9 @@
 		0EBCBCCE283E415A00B2CE18 /* Component.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0EBCBCCC283E415A00B2CE18 /* Component.cpp */; };
 		0EBCBCD1283E416000B2CE18 /* File.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0EBCBCCF283E416000B2CE18 /* File.cpp */; };
 		0EBCBCD4283E416A00B2CE18 /* Group.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0EBCBCD2283E416A00B2CE18 /* Group.cpp */; };
+		0EBCBCD8283F430900B2CE18 /* Image.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0EBCBCD6283F430900B2CE18 /* Image.cpp */; };
+		0EBCBCDB283F4A3A00B2CE18 /* LandStatImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0EBCBCD9283F4A3A00B2CE18 /* LandStatImage.cpp */; };
+		0EBCBCDE283F506E00B2CE18 /* SpotImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0EBCBCDC283F506E00B2CE18 /* SpotImage.cpp */; };
 		0ED2047D283B7DFC0098C7A8 /* String2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0ED2047B283B7DFC0098C7A8 /* String2.cpp */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +50,12 @@
 		0EBCBCD0283E416000B2CE18 /* File.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = File.hpp; sourceTree = "<group>"; };
 		0EBCBCD2283E416A00B2CE18 /* Group.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Group.cpp; sourceTree = "<group>"; };
 		0EBCBCD3283E416A00B2CE18 /* Group.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Group.hpp; sourceTree = "<group>"; };
+		0EBCBCD6283F430900B2CE18 /* Image.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Image.cpp; sourceTree = "<group>"; };
+		0EBCBCD7283F430900B2CE18 /* Image.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Image.hpp; sourceTree = "<group>"; };
+		0EBCBCD9283F4A3A00B2CE18 /* LandStatImage.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LandStatImage.cpp; sourceTree = "<group>"; };
+		0EBCBCDA283F4A3A00B2CE18 /* LandStatImage.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LandStatImage.hpp; sourceTree = "<group>"; };
+		0EBCBCDC283F506E00B2CE18 /* SpotImage.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SpotImage.cpp; sourceTree = "<group>"; };
+		0EBCBCDD283F506E00B2CE18 /* SpotImage.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SpotImage.hpp; sourceTree = "<group>"; };
 		0ED2047B283B7DFC0098C7A8 /* String2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = String2.cpp; sourceTree = "<group>"; };
 		0ED2047C283B7DFC0098C7A8 /* String2.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = String2.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -81,6 +90,7 @@
 		0E8B8CA0282B99CA0048C9C4 /* houjie-cpp-intro */ = {
 			isa = PBXGroup;
 			children = (
+				0EBCBCD5283F3A1900B2CE18 /* Prototype */,
 				0EBCBCC5283E374700B2CE18 /* Subject.cpp */,
 				0EBCBCC6283E374700B2CE18 /* Subject.hpp */,
 				0EBCBCC8283E376000B2CE18 /* Observer.cpp */,
@@ -108,6 +118,19 @@
 				0EBCBCD3283E416A00B2CE18 /* Group.hpp */,
 			);
 			path = FileSystem;
+			sourceTree = "<group>";
+		};
+		0EBCBCD5283F3A1900B2CE18 /* Prototype */ = {
+			isa = PBXGroup;
+			children = (
+				0EBCBCD6283F430900B2CE18 /* Image.cpp */,
+				0EBCBCD7283F430900B2CE18 /* Image.hpp */,
+				0EBCBCD9283F4A3A00B2CE18 /* LandStatImage.cpp */,
+				0EBCBCDA283F4A3A00B2CE18 /* LandStatImage.hpp */,
+				0EBCBCDC283F506E00B2CE18 /* SpotImage.cpp */,
+				0EBCBCDD283F506E00B2CE18 /* SpotImage.hpp */,
+			);
+			path = Prototype;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,8 +190,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EBCBCDB283F4A3A00B2CE18 /* LandStatImage.cpp in Sources */,
 				0EBCBCC7283E374700B2CE18 /* Subject.cpp in Sources */,
 				0EBCBCD4283E416A00B2CE18 /* Group.cpp in Sources */,
+				0EBCBCDE283F506E00B2CE18 /* SpotImage.cpp in Sources */,
 				0EBCBCD1283E416000B2CE18 /* File.cpp in Sources */,
 				0EBCBCCA283E376000B2CE18 /* Observer.cpp in Sources */,
 				0EBCBCCE283E415A00B2CE18 /* Component.cpp in Sources */,
@@ -176,6 +201,7 @@
 				0E8B8CA2282B99CA0048C9C4 /* main.cpp in Sources */,
 				0ED2047D283B7DFC0098C7A8 /* String2.cpp in Sources */,
 				0EBCBCC4283E251800B2CE18 /* Queue.cpp in Sources */,
+				0EBCBCD8283F430900B2CE18 /* Image.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

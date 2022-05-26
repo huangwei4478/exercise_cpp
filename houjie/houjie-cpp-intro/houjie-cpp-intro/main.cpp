@@ -9,6 +9,7 @@
 #include "Complex.hpp"
 #include "String2.hpp"
 #include "Queue.hpp"
+#include "Prototype/Image.hpp"
 
 int main(int argc, const char * argv[]) {
     complex c1(2, 3);
@@ -24,5 +25,12 @@ int main(int argc, const char * argv[]) {
     std::cout << s1 << std::endl;
     std::cout << s2 << std::endl;
     std::cout << s3 << std::endl;
+    
+    Image* spotImage = Image::findAndClone(SPOT);
+    Image* lanstatImage = Image::findAndClone(LSAT);
+    
+    spotImage->draw();                  // SpotImage::draw
+    lanstatImage->draw();               // LandSatImage::draw
+    
     return 0;
 }
