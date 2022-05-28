@@ -2,10 +2,16 @@
 //
 
 #include <iostream>
+#include "MemberTemplate.h"
 
-int main()
-{
-    std::cout << "Hello World!\n";
+class Bird {};
+class Chicken: public Bird{};
+
+class Man {};
+class Worker: public Man{};
+
+int main() {
+	std::cout << __cplusplus << std::endl;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

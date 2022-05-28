@@ -141,9 +141,13 @@
   <ItemGroup>
     <ClCompile Include="FunctionLikeClasses.cpp" />
     <ClCompile Include="houjie_advanced_cpp.cpp" />
+    <ClCompile Include="MemberTemplate.cpp" />
+    <ClCompile Include="Specializations.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="FunctionLikeClasses.h" />
+    <ClInclude Include="MemberTemplate.h" />
+    <ClInclude Include="Specializations.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
