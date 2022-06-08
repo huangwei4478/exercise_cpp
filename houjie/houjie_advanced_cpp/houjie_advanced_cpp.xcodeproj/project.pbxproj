@@ -26,6 +26,7 @@
 		0EB67DE92840A59100B9E316 /* houjie_advanced_cpp */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = houjie_advanced_cpp; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EB67DEC2840A59100B9E316 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		0EB67DF42840A90500B9E316 /* Fraction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Fraction.h; sourceTree = "<group>"; };
+		0ECAE8C028508F1A0067AEEF /* VariadicParameter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VariadicParameter.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +61,7 @@
 			children = (
 				0EB67DEC2840A59100B9E316 /* main.cpp */,
 				0EB67DF32840A8D400B9E316 /* Convertion */,
+				0ECAE8C028508F1A0067AEEF /* VariadicParameter.h */,
 			);
 			path = houjie_advanced_cpp;
 			sourceTree = "<group>";
